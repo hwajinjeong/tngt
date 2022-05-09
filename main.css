@@ -1,0 +1,215 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul{
+    list-style: none;
+}
+body{
+    font-family: "Arial";
+    font-size: 14px;
+    line-height: 24px;
+    color: #000;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*top*/
+#top{
+    width: 1080px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+#top ul li{
+    float: left;
+    padding-left: 20px;
+    color: #ccc;
+}
+#top ul{
+    float: right;
+}
+/*header*/
+#header{
+    width: 1080px;
+    margin: 0 auto;
+}
+#gnb li{
+    float: left;
+    font-weight: bold;
+    padding: 30px;
+    scroll-padding-block-end: ;
+}
+h1{
+    text-align: center;
+
+}
+#logo{
+    float: left;
+    padding-top: 15px;
+}
+#gnb{
+    float: right
+    ;
+}
+/*box*/
+#box1{
+    width: 1080px;
+    margin: 0 auto;
+    padding: 10px 0;
+    
+
+    float: ;
+}
+#box1_img{
+    float: left;
+}
+#box1_text{
+    float: right;
+    width: 400px;
+    font-weight: bold;
+    font-size: 18px;
+}
+#box2{
+    width: 1080px;
+    margin: 0 auto;
+    padding: 10px 0;
+    float: ;
+}
+#box2_img{
+    float: left;
+}
+#box2_text{
+    float: right;
+    width: 400px;
+    font-weight: bold;
+    font-size: 18px;
+}
+#box1_text p{
+    padding-top: 40px;
+    padding: 40px 0;
+}
+#box2_text p{
+    padding-top: 40px;
+    padding: 40px 0;
+}
+#box3_text p{
+    padding-top: 40px;
+    padding: 40px 0;
+}
+#box3{
+    width: 1080px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+#box3_img{
+    float: left;
+}
+#box3_text{
+    float: right;
+    width: 400px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.sub_inner{
+    width: 1080px;
+    margin: 0 auto;
+}
+.sub_inner ul li{
+    float: left;
+    padding-right: 34px;
+}
+.sub_inner ul li:nth-child()
+.sub_inner ul{
+    padding: 20px 0;
+}
+
+/*호버시 모양을 다 만들었다면, 안보이게 해준다.(sub가)*/
+.sub{
+    display: none;
+}
+#gnb>li:hover>.sub{
+    display: block;
+}
+/*sub*/
+/*배경과 마진오토의 위치를 먼저 잡아주고 하는게 만들기 편하기 때문에, sub에 포지션을 먼저 설정합니다.*/
+.sub{
+    position: absolute;
+    top: 128px;
+    /*100%로 주지 않는 이유는, body에 기준을 잡았기 때문.*/
+    left: 0;
+    z-index: 10;
+    background-color: #fff;
+    width: 100%;
+    /*position:absolute는 width가 없는 상태에서주면, 안에 들어있는 내용물 중에서 가장 넓은 것 기준으로 잡히므로, 
+    width:100%를 기준으로 */
+}
+#gnb>li:hover{
+    color: #ccc;
+}
+#sns ul li:hover img{
+    transform: scale();
+}
+#sns{
+    width: 1080px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+/*footer*/
+#footer{
+    border-top: 1px solid #ccc;
+}
+#footer_inner{
+    width: 1080px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px 0;
+}
+#footer_inner ul li a{
+    display: block;
+    border: 1px solid #ccc;
+    padding: 15px 30px;
+    color: #ccc;
+}
+#footer_inner ul li:nth-child(1){
+    margin-right: 5px;
+}
+#footer_inner ul{
+    display: inline-block;
+}
+#footer_inner p{
+    padding: 30px 0 15px;
+}
+#footer_inner select{
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    width: 200px;
+}
+/*top_btn*/
+.top_btn a{
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 50%;
+    box-shadow: ;
+}
+.top_btn{
+    position: fixed;
+    right: 100px;
+    bottom: 80px;
+    z-index: 99;
+}

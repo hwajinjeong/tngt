@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8"><!--인코딩방식 지정. 이 코드가 없으면 서버에 올렸을 때 한글이 깨져서 나온다.-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--익스플로러에서 실행 할때, 최신버전으로 실행해서 호환성을 높이기 위함.-->
+    <meta name="viewport" content="width:1100">
+    <!--content안 따옴표 안에 내용을 전부 지우고, 내가 정한 마진오토 사이즈보다 조금더 큰 width로 설정한다.-->
+    <!--원래 들어간 viewpoint는, 반응형 사이트를 위한 뷰포인트이므로, 반응형 사이트를 만드는게 아니라면 content를 수정해 주어야한다.-->
+    <title>tngt</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="images/ic_favicon_128.png" type="image/x-icon">
+</head>
+<body>
+    <div id="header" class="clearfix">
+        <!--마진오토-->
+            <h1 id="logo">
+                <a href="#"><img src="images/logo.png" alt="tngt로고"></a>
+            </h1>
+            <ul id="gnb">
+                <li><a href="#">ABOUT</a>
+    <!--sub메뉴가 배경과 마진오토 박스가 존재해야하는 구조이므로, 원래 하던 sub와 들어가는 위치는 동일하나, 배경용 div와 마진오토용 div를 추가해서 넣어준다.-->
+                   <div class="sub">
+                        <div class="sub_inner">
+                            <ul>
+                                <li>ABOUT TNGT<br>
+                                WHAT'S NEW</li>
+                                <li><a href="#"><img src="images/gnb_about1.jpg" alt="gnb_about1"></a></li>
+                                <li><a href="#"><img src="images/gnb_about2.jpg" alt="gnb_about2"></a></li>
+                            </ul>
+                        </div><!--sub_inner-->
+                   </div><!--sub--> 
+                </li>
+            <li><a href="#">내일 뭐 입지?</a></li>
+            <li><a href="#">PRODUCT</a></li>
+            <li><a href="#">STORE</a></li>
+            <li><a href="#"><img src="images/mall.png" alt="몰"></a></li>
+        </ul>
+    </div>
+
+    <div>
+        <img src="images/gnb_about1.jpg" alt="메인">
+    </div>
+    
+    <h1><img src="images/title.png" alt="타이틀"></h1>
+    <div id="box1" class="clearfix">
+        <div id="box1_img"><img src="images/how_1.png" alt="제품사진1"></div>
+        <div id="box1_text">
+            <p>WEEKLY LOOK</p>
+            <h3>뽀빠이 힘이 솟아나는<br>
+                티셔츠로 더위 격파!</h3>
+        </div>
+    </div>
+    <div id="box2">
+        <div id="box2_img"><img src="images/how_2.png" alt="제품사진2"></div>
+        <div id="box2_text">
+            <p>DAILY ITEM</p>
+            <h3>TNGT 콜라보 아이템 장착하고<br>
+                페스티벌로 DDU-DU DDU-DU</h3>
+        </div>
+    </div>
+    <div id="box3">
+        <div id="box3_img"><img src="images/how_3.png" alt="제품사진3"></div>
+        <div id="box3_text">
+            <p>BE TRENDY</p>
+            <h3>페스티벌룩 고민보다 GO!</h3>
+        </div>
+    </div>
+    <div>
+        <ul><li><a href="#"></a></li></ul>
+    </div>
+    <select name=""></select>
+    <div class="top_btn">
+        <a href="#">TOP</a>
+    </div>
+</body>
+</html>
